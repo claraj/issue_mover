@@ -19,11 +19,11 @@ password = getpass.getpass(prompt='enter password: ')  # window users, password.
 
 base_repo_name = input('enter the repo name e.g. book_wishlist ') 
 
-source_url = 'https://api.github.com/repos/minneapolis-edu/{}/issues'.format(base_repo_name)
+source_url = 'https://api.github.com/repos/claraj/{}/issues'.format(base_repo_name)
 
 github = Github(username, password)
 
-base_repo = github.get_repo('minneapolis-edu/' + base_repo_name)
+base_repo = github.get_repo('claraj/' + base_repo_name)
 base_issues = base_repo.get_issues()
 
 
