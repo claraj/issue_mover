@@ -17,7 +17,7 @@ username = input('enter your username: ') # or put your GitHub username here
 password = getpass.getpass(prompt='enter password: ')  # window users, password.getpass doesn't work for you. You'll need to replace with password= 'your password'
 
 
-base_repo_name = input('enter the repo name e.g. book_wishlist ') 
+base_repo_name = input('enter the repo name e.g. readinglist for a repo located at https://github.com/claraj/readinglist/') 
 
 source_url = 'https://api.github.com/repos/claraj/{}/issues'.format(base_repo_name)
 
